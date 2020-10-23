@@ -9,7 +9,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 *, *:before, *:after {box-sizing: inherit}
 
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+.srOnly /*thank you Safi*/{ position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 * {
     margin: 0;
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
     font-family: 'Catamaran', sans-serif;
     font-size: 2rem;
@@ -132,6 +132,7 @@ input[type="checkbox"]:checked + .headerNav {
     width: 300px;
     transition: transform 0.6s;
     z-index: 3;
+    width: 100%;
 }
 
 .headerNav a {
@@ -221,8 +222,8 @@ h3 {
 
 /* GIVING BACK STYLES */
 
-.givingBack .readMore {
-    padding: 9px 45px;
+.givingBackText {
+    text-align: left;
 }
 
 
@@ -334,5 +335,28 @@ footer h2 {
         font-size: 3rem;
     }
 }
+
+@media (min-width:768px) {
+    .headerNav {
+        width: 60%;
+    }
+    h1 {
+        bottom: 40%;
+    }
+
+    
+}
+
+@media (min-width:940px) {
+    .fa-bars {
+        display: none;
+    }
+
+    .headerNav {
+        background: none;
+    }
+}
+
+
 
 
