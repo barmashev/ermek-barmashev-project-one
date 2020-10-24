@@ -223,6 +223,7 @@ h3 {
 /* GIVING BACK STYLES */
 
 .givingBackText {
+    padding: 40px 5px;
     text-align: left;
 }
 
@@ -297,16 +298,13 @@ footer h2 {
     padding: 10px;
     display: block;
     width: 100%;
-    margin: 10px;
-}
-
-.stayUpdated input {
     margin: 20px auto;
-    text-align: center;
     padding: 13px 0;
 }
 
-.stayUpdated button {
+
+
+.subscribe {
     width: 100%;
     display: block;
     background-color: #186684;
@@ -348,13 +346,77 @@ footer h2 {
 }
 
 @media (min-width:940px) {
+    .wrapper {
+        width: 90%;
+    }
     .fa-bars {
         display: none;
     }
 
     .headerNav {
         background: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        width: auto;
     }
+
+    .headerNav li {
+        float: none;
+        width: auto;
+    }
+
+    h1 {
+        font-size: 9rem;
+        width: auto;
+        padding: 20px;
+        bottom: 25%;
+        right: 25%;
+        padding: 20px;
+    }
+
+    .galleryItem {
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+
+    .galleryText {
+        width: 45%;
+        padding: 20px;
+    }
+    
+    h2 {
+        text-align: left;
+    }
+
+    .theGramItem:last-of-type {
+    display: block;
+    } 
+    
+    .theGramItem {
+    float: left;
+    width: calc(30% - 10px);
+    }
+
+    .contact, .stayUpdated {
+        float: left;
+        width: 50%;
+    }
+
+    input[type="text"], .subscribe {
+        float: left;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+    .subscribe {
+        width: 40%;
+    }
+
+    
+    
 }
 
 
