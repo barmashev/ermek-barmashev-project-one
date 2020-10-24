@@ -51,7 +51,7 @@ h2,h3 {
 
 h2 {
     font-size: 4rem;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 ul li {
@@ -91,6 +91,7 @@ nav {
     top: 20px;
     left: -1000px;
     background-color: #f4f4f4;
+    text-decoration: auto;
 }
 
 .skipLink:focus {
@@ -139,7 +140,7 @@ input[type="checkbox"]:checked + .headerNav {
     margin: 25px;
 }
 
-.headerNav a:first-child {
+.headerNav li:first-child a {
     color: #e85b26;
 }
 
@@ -222,12 +223,18 @@ h3 {
 
 /* GIVING BACK STYLES */
 
-.givingBackText {
-    padding: 40px 5px;
-    text-align: left;
+.givingBack {
+    background-color: #f4f4f4;
 }
 
+.givingBackText {
+    padding: 40px 0;
+    text-align: center;
+}
 
+.givingBackText p {
+    text-align: left;
+}
 
 /* THE GRAM STYLES */
 
@@ -299,10 +306,9 @@ footer h2 {
     display: block;
     width: 100%;
     margin: 20px auto;
-    padding: 13px 0;
+    padding: 13px 10px;
+    height: 60px;
 }
-
-
 
 .subscribe {
     width: 100%;
@@ -312,6 +318,8 @@ footer h2 {
     padding: 13px 0;
     border: 4px solid #e85b26;
     text-transform: uppercase;
+    height: 60px;
+    margin: 20px auto;
 }
 
 .copyright {
@@ -384,14 +392,29 @@ footer h2 {
     .galleryText {
         width: 45%;
         padding: 20px;
+        font-size: 1.6rem;
+    }
+
+    .galleryPair:first-of-type .galleryImg {
+        float: right;
     }
     
     h2 {
         text-align: left;
     }
 
+    .givingBackImg {
+        float: left;
+        width: 30%;
+    }
+
+    .givingBackText {
+        width: 50%;
+        float: left;
+    }
+
     .theGramItem:last-of-type {
-    display: block;
+        display: block;
     } 
     
     .theGramItem {
