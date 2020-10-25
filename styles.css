@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1280px;
     margin: 0 auto;
     font-family: 'Catamaran', sans-serif;
     font-size: 2rem;
@@ -340,92 +340,20 @@ footer h2 {
     .headerNav {
         width: 60%;
     }
+    
     h1 {
         bottom: 40%;
     }
 
-    
-}
-
-@media (min-width:630px) {
-    
-}
-
-@media (min-width:945px) {
-
-    /* HEADER STYLES */
-    .wrapper {
-        width: 90%;
-    }
-
-    .social {
-        display: block;
-        position: absolute;
-        right: 40px;
-        bottom: 50%;
-        text-align: center;
-    }
-
-    .social li {
-        float: left;
-        clear: both;
-    }
-
-    .fa-bars {
-        display: none;
-    }
-
-    .headerNav {
-        background: none;
-        position: fixed;
-        right: 0;
-        left: 0;
-        width: auto;
-    }
-
-    .headerNav li {
-        float: none;
-        width: auto;
-    }
-
-    h1 {
-        font-size: 9rem;
-        width: auto;
-        padding: 20px;
-        bottom: 25%;
-        right: 25%;
-        padding: 20px;
-    }
-
-    /* GALLERY STYLES */
-    .galleryPair:first-child .galleryText {
-        margin: 4% 1% 4% 5%;
-    }
-    .galleryItem {
-        float: left;
-        width: 50%;
-        text-align: left;
-    }
-
-    .galleryText {
-        width: 44%;
-        padding: 0;
-        margin: 4% 5% 4% 1%;
-        font-size: 1.6rem;
-    }
-
-    .galleryPair:first-of-type .galleryImg {
-        float: right;
-    }
-    
-    h2 {
-        text-align: left;
+    .iconsSection {
+        font-size: 2rem;
     }
 
     /* GIVING BACK */
 
     .givingBack h2{
         margin-top: 0;
+        text-align: left;
     }
 
     .givingBackContainer {
@@ -483,9 +411,96 @@ footer h2 {
         width: calc(100%/3 - 40px/3);
     }
 
+
+    
+}
+
+@media (min-width:945px) {
+
+    h2 {
+        text-align: left;
+    }
+
+    /* HEADER STYLES */
+    .wrapper {
+        width: 90%;
+    }
+
+    .social {
+        display: block;
+        position: absolute;
+        right: 40px;
+        bottom: 50%;
+        text-align: center;
+    }
+
+    .social li {
+        float: left;
+        clear: both;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .headerNav {
+        background: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        width: auto;
+    }
+
+    .headerNav li {
+        float: none;
+        width: auto;
+    }
+
+    h1 {
+        font-size: 9rem;
+        width: auto;
+        padding: 20px;
+        bottom: 25%;
+        right: 25%;
+        padding: 20px;
+    }
+
+    /* GALLERY STYLES */
+    .galleryPair:first-child .galleryText {
+        margin: 4% 1% 4% 5%;
+        float: left;
+    }
+    .galleryItem {
+        float: left;
+        width: 50%;
+        text-align: left;
+    }
+
+    .galleryText {
+        width: 44%;
+        padding: 0;
+        margin: 4% 5% 4% 1%;
+        font-size: 1.6rem;
+        float: right;
+    }
+
+    .galleryPair:first-of-type .galleryImg {
+        float: right;
+    }
+
+    /* ICONS STYLE */
+
+    .iconsSection {
+        font-size: 3rem;
+    }
+
     /* FOOTER STYLES */
 
     footer {
+        text-align: left;
+    }
+
+    .footerNav h3 {
         text-align: left;
     }
 
@@ -510,6 +525,15 @@ footer h2 {
 
 }
 
+@media (min-width:1190px) {
+    .galleryPair:first-child .galleryText {
+        margin: 7% 0% 7% 5%;
+    }
+
+    .galleryText {
+        margin: 7% 5% 7% 0%;
+    }
+}
 
 
 
